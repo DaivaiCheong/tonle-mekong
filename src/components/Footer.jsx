@@ -6,7 +6,9 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-logo">
-            <img src="/images/mekong-logo.png" alt="Tonle Mekong Logo" />
+            <div className="logo-container">
+              <img src="/images/mekong-logo.png" alt="Tonle Mekong Logo" />
+            </div>
             <p>Exquisite dining experience since 2010</p>
           </div>
 
@@ -25,6 +27,9 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="#gallery">Gallery</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
