@@ -81,7 +81,7 @@ export default async function handler(req, res) {
         // Create email data
         const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail()
         sendSmtpEmail.sender = {
-          name: options.senderName || "MEKONG Restaurant",
+          name: options.senderName || "Tonle Mekong Restaurant",
           email: process.env.EMAIL_USER,
         }
         sendSmtpEmail.to = [
@@ -111,7 +111,7 @@ export default async function handler(req, res) {
     // Create a nicely formatted HTML email
     const htmlContent = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 5px;">
-        <h1 style="color: #e67e22; border-bottom: 2px solid #e67e22; padding-bottom: 10px;">New Reservation Request - MEKONG Restaurant</h1>
+        <h1 style="color: #e67e22; border-bottom: 2px solid #e67e22; padding-bottom: 10px;">New Reservation Request - Tonle Mekong Restaurant</h1>
         
         <div style="margin: 20px 0;">
           <h2 style="color: #333;">Customer Information</h2>
@@ -129,14 +129,14 @@ export default async function handler(req, res) {
         </div>
         
         <div style="margin-top: 20px; font-size: 14px; color: #666; border-top: 1px solid #e0e0e0; padding-top: 10px;">
-          <p>This reservation was submitted through the MEKONG Restaurant website.</p>
+          <p>This reservation was submitted through the Tonle Mekong Restaurant website.</p>
         </div>
       </div>
     `
 
     // Plain text version
     const textContent = `
-      New Reservation Request - MEKONG Restaurant
+      New Reservation Request - Tonle Mekong Restaurant
       
       Customer Information:
       Name: ${name}
@@ -149,7 +149,7 @@ export default async function handler(req, res) {
       Number of Guests: ${guests}
       Special Requests: ${message || "None"}
       
-      This reservation was submitted through the MEKONG Restaurant website.
+      This reservation was submitted through the Tonle Mekong Restaurant website.
     `
 
     // Generate a unique confirmation code for this reservation
@@ -158,11 +158,11 @@ export default async function handler(req, res) {
     // Create confirmation email for customer
     const confirmationHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 5px;">
-        <h1 style="color: #e67e22; border-bottom: 2px solid #e67e22; padding-bottom: 10px;">Reservation Confirmation - MEKONG Restaurant</h1>
+        <h1 style="color: #e67e22; border-bottom: 2px solid #e67e22; padding-bottom: 10px;">Reservation Confirmation - Tonle Mekong Restaurant</h1>
         
         <div style="margin: 20px 0;">
           <p>Dear ${name},</p>
-          <p>Thank you for choosing MEKONG Restaurant. Your reservation has been received and is being processed.</p>
+          <p>Thank you for choosing Tonle Mekong Restaurant. Your reservation has been received and is being processed.</p>
         </div>
         
         <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 5px;">
@@ -175,23 +175,23 @@ export default async function handler(req, res) {
         
         <div style="margin: 20px 0;">
           <p>If you need to modify or cancel your reservation, please contact us at:</p>
-          <p>Phone: +1 (555) 123-4567</p>
-          <p>Email: reservations@mekong.com</p>
+          <p>Phone: 063 964 667</p>
+          <p>Email: tonlemekong@cambodiarestaurants.com</p>
         </div>
         
         <div style="margin-top: 20px; font-size: 14px; color: #666; border-top: 1px solid #e0e0e0; padding-top: 10px;">
-          <p>We look forward to serving you at MEKONG Restaurant!</p>
+          <p>We look forward to serving you at Tonle Mekong Restaurant!</p>
         </div>
       </div>
     `
 
     // Confirmation email plain text
     const confirmationText = `
-      Reservation Confirmation - MEKONG Restaurant
+      Reservation Confirmation - Tonle Mekong Restaurant
       
       Dear ${name},
       
-      Thank you for choosing MEKONG Restaurant. Your reservation has been received and is being processed.
+      Thank you for choosing Tonle Mekong Restaurant. Your reservation has been received and is being processed.
       
       Your Reservation Details:
       Date: ${formattedDate}
@@ -200,10 +200,10 @@ export default async function handler(req, res) {
       Confirmation Code: ${confirmationCode}
       
       If you need to modify or cancel your reservation, please contact us at:
-      Phone: +1 (555) 123-4567
-      Email: reservations@mekong.com
+      Phone: 063 964 667
+      Email: tonlemekong@cambodiarestaurants.com
       
-      We look forward to serving you at MEKONG Restaurant!
+      We look forward to serving you at Tonle Mekong Restaurant!
     `
 
     console.log("Sending notification email to restaurant...")
@@ -214,7 +214,7 @@ export default async function handler(req, res) {
         subject: `New Reservation Request from ${name}`,
         html: htmlContent,
         text: textContent,
-        senderName: "MEKONG Restaurant",
+        senderName: "Tonle Mekong Restaurant",
       })
       console.log("Restaurant notification email sent successfully")
     } catch (notifyError) {
@@ -228,10 +228,10 @@ export default async function handler(req, res) {
       await sendEmailWithBrevo({
         to: email,
         toName: name,
-        subject: "Your Reservation at MEKONG Restaurant is Confirmed",
+        subject: "Your Reservation at Tonle Mekong Restaurant is Confirmed",
         html: confirmationHtml,
         text: confirmationText,
-        senderName: "MEKONG Restaurant",
+        senderName: "Tonle Mekong Restaurant",
       })
       console.log("Customer confirmation email sent successfully")
     } catch (confirmError) {

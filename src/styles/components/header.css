@@ -25,12 +25,40 @@
   padding: 0 1.5rem;
 }
 
-.logo h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #e67e22; /* Orange brand color */
-  margin: 0;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+.logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 0px; /* Move the logo down slightly */
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+.site-header.scrolled .logo::before {
+  width: 60px;
+  height: 60px;
+}
+
+.logo img {
+  height: 45px;
+  width: auto;
+  transition: height 0.3s ease;
+}
+
+.site-header.scrolled .logo img {
+  height: 40px;
 }
 
 .main-nav ul {
@@ -130,6 +158,28 @@
 @media (max-width: 768px) {
   .mobile-menu-toggle {
     display: flex;
+  }
+
+  .logo {
+    margin-top: 4px; /* Slightly less margin on mobile */
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .logo::before {
+    width: 48px;
+    height: 48px;
+  }
+
+  .site-header.scrolled .logo::before {
+    width: 42px;
+    height: 42px;
+  }
+
+  .site-header.scrolled .logo img {
+    height: 35px;
   }
 
   .main-nav {

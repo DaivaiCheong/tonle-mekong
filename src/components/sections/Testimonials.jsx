@@ -9,7 +9,7 @@ const Testimonials = () => {
       name: "Oeng Chihea",
       role: "Food Critic",
       quote:
-        "Mekong offers one of the most refined dining experiences in the city. The attention to detail in every dish is remarkable.",
+        "Tonle Mekong offers one of the most refined dining experiences in the city. The attention to detail in every dish is remarkable.",
       avatar: "/images/chihea.jpg",
     },
     {
@@ -25,7 +25,7 @@ const Testimonials = () => {
       name: "Cheong Choovai",
       role: "Food Blogger",
       quote:
-        "From the ambiance to the service to the exquisite food, Mekong creates a memorable experience that keeps me coming back.",
+        "From the ambiance to the service to the exquisite food, Tonle Mekong creates a memorable experience that keeps me coming back.",
       avatar: "/images/choonvai.jpg",
     },
   ]

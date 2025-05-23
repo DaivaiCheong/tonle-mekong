@@ -125,7 +125,7 @@ const Contact = () => {
             </div>
 
             <p>
-              Reserve your table online and enjoy a seamless dining experience at Mekong. For special requests or larger
+              Reserve your table online and enjoy a seamless dining experience at Tonle Mekong. For special requests or larger
               parties, please call us directly.
             </p>
 
@@ -134,7 +134,7 @@ const Contact = () => {
                 <i className="fas fa-map-marker-alt"></i>
                 <div>
                   <h4>Location</h4>
-                  <p>123 Gourmet Street, Culinary District</p>
+                  <p>#110, Street No. 6, Phum Krous, Sangkat Svay Dangkum, Siem Reap, Cambodia</p>
                 </div>
               </div>
 
@@ -142,7 +142,7 @@ const Contact = () => {
                 <i className="fas fa-phone-alt"></i>
                 <div>
                   <h4>Phone</h4>
-                  <p>+1 (555) 123-4567</p>
+                  <p>Tel: 063 964 667 | Fax: 063 965 035</p>
                 </div>
               </div>
 
@@ -150,7 +150,7 @@ const Contact = () => {
                 <i className="fas fa-envelope"></i>
                 <div>
                   <h4>Email</h4>
-                  <p>reservations@mekong.com</p>
+                  <p>tonlemekong@cambodiarestaurants.com</p>
                 </div>
               </div>
 

@@ -18,10 +18,29 @@
     margin-bottom: 3rem;
   }
   
-  .footer-logo h2 {
-    font-size: 1.8rem;
-    color: #e67e22;
-    margin: 0 0 0.5rem;
+  .footer-logo {
+    position: relative;
+  }
+
+  .footer-logo::before {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 0;
+    left: 30px;
+    top: 30px;
+    transform: translate(-50%, -50%);
+  }
+  
+  .footer-logo img {
+    height: 60px;
+    width: auto;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
   }
   
   .footer-logo p {
@@ -102,6 +121,15 @@
     .footer-bottom {
       flex-direction: column;
       gap: 1.5rem;
+    }
+
+    .footer-logo img {
+      height: 50px;
+    }
+
+    .footer-logo::before {
+      width: 56px;
+      height: 56px;
     }
   }
   

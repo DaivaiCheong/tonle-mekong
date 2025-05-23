@@ -24,10 +24,10 @@ export default function Home() {
   return (
     <div className="home-container">
       <Head>
-        <title>Mekong Restaurant - Exquisite Dining Experience</title>
+        <title>Tonle Mekong Restaurant - Exquisite Dining Experience</title>
         <meta
           name="description"
-          content="Experience the finest dining with our chef-crafted menu featuring locally sourced ingredients at Mekong Restaurant."
+          content="Experience the finest dining with our chef-crafted menu featuring locally sourced ingredients at Tonle Mekong Restaurant."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

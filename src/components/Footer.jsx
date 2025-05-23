@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-logo">
-            <h2>Mekong</h2>
+            <img src="/images/mekong-logo.png" alt="Tonle Mekong Logo" />
             <p>Exquisite dining experience since 2010</p>
           </div>
 
@@ -32,10 +32,11 @@ const Footer = () => {
             <div className="footer-column">
               <h3>Contact</h3>
               <ul>
-                <li>123 Gourmet Street</li>
-                <li>Culinary District</li>
-                <li>+1 (555) 123-4567</li>
-                <li>info@mekong.com</li>
+                <li>Tonle Mekong</li>
+                <li>#110, Street No. 6, Phum Krous</li>
+                <li>Sangkat Svay Dangkum, Siem Reap, Cambodia</li>
+                <li>Tel: 063 964 667 | Fax: 063 965 035</li>
+                <li>tonlemekong@cambodiarestaurants.com</li>
               </ul>
             </div>
 
@@ -67,7 +68,7 @@ const Footer = () => {
           </div>
 
           <div className="copyright">
-            <p>&copy; {currentYear} Mekong Restaurant. All rights reserved.</p>
+            <p>&copy; {currentYear} Tonle Mekong Restaurant. All rights reserved.</p>
           </div>
         </div>
       </div>

@@ -81,7 +81,9 @@ const Header = () => {
     <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
       <div className="header-container">
         <div className="logo">
-          <h1>Mekong</h1>
+          <a href="#home">
+            <img src="/images/mekong-logo.png" alt="Tonle Mekong Logo" />
+          </a>
         </div>
 
         <div className={`mobile-menu-toggle ${mobileMenuOpen ? "open" : ""}`} onClick={toggleMobileMenu}>

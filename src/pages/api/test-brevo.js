@@ -49,19 +49,19 @@ export default async function handler(req, res) {
     // Create a test email
     const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail()
 
-    sendSmtpEmail.subject = "Brevo API Test - MEKONG Restaurant"
+    sendSmtpEmail.subject = "Brevo API Test - Tonle Mekong Restaurant"
     sendSmtpEmail.htmlContent = `
       <html>
         <body>
           <h1 style="color: #e67e22;">Test Email</h1>
-          <p>This is a test email from the MEKONG Restaurant reservation system using Brevo API.</p>
+          <p>This is a test email from the Tonle Mekong Restaurant reservation system using Brevo API.</p>
           <p>If you're seeing this, your email configuration is working correctly!</p>
           <p>Timestamp: ${new Date().toISOString()}</p>
           <p>Environment: ${process.env.NODE_ENV || "unknown"}</p>
         </body>
       </html>
     `
-    sendSmtpEmail.sender = { name: "MEKONG Restaurant", email: EMAIL_USER }
+    sendSmtpEmail.sender = { name: "Tonle Mekong Restaurant", email: EMAIL_USER }
     sendSmtpEmail.to = [{ email: EMAIL_USER, name: "Test Recipient" }]
 
     console.log("Sending test email...")

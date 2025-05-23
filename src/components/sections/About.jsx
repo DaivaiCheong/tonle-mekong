@@ -8,12 +8,12 @@ const About = () => {
         <div className="about-content">
           <div className="section-header">
             <span className="subtitle animate-on-scroll fade-up">Our Story</span>
-            <h2 className="animate-on-scroll fade-up delay-200">About Mekong</h2>
+            <h2 className="animate-on-scroll fade-up delay-200">About Tonle Mekong</h2>
           </div>
 
           <div className="about-text animate-on-scroll fade-up delay-400">
             <p>
-              Founded in 2010, Mekong has been serving exquisite cuisine in a warm and elegant atmosphere. Our passion
+              Founded in 2010, Tonle Mekong has been serving exquisite cuisine in a warm and elegant atmosphere. Our passion
               for culinary excellence drives us to create memorable dining experiences for our guests.
             </p>
             <p>
@@ -65,10 +65,10 @@ const About = () => {
 
         <div className="about-images-container animate-on-scroll slide-in-right">
           <div className="about-image primary-image">
-            <img src="/images/guide.jpg" alt="Mekong Cooking Demonstration" />
+            <img src="/images/guide.jpg" alt="Tonle Mekong Cooking Demonstration" />
           </div>
           <div className="about-image secondary-image animate-on-scroll fade-in delay-300">
-            <img src="/images/place.jpg" alt="Mekong Restaurant Interior" />
+            <img src="/images/place.jpg" alt="Tonle Mekong Restaurant Interior" />
           </div>
         </div>
       </div>

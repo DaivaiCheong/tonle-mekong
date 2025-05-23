@@ -5,7 +5,10 @@ const Hero = () => {
   return (
     <section id="home" className="hero-section">
       <div className="hero-content">
-        <h1 className="animate-on-scroll fade-up">Welcome to Mekong</h1>
+        <div className="hero-logo animate-on-scroll fade-in">
+          <img src="/images/mekong-logo.png" alt="Tonle Mekong Logo" />
+        </div>
+        <h1 className="animate-on-scroll fade-up">Welcome to Tonle Mekong</h1>
         <h2 className="animate-on-scroll fade-up delay-200">A Culinary Journey</h2>
         <p className="animate-on-scroll fade-up delay-400">
           Experience the finest dining with our chef-crafted menu featuring locally sourced ingredients
