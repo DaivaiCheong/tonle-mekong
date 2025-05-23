@@ -1,6 +1,11 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+  "/Home": "pages/Home.html",
+  "/api/send-email": "pages/api/send-email.js",
+  "/api/send-email-direct": "pages/api/send-email-direct.js",
+  "/api/test-brevo": "pages/api/test-brevo.js",
+  "/": "pages/index.html",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/404": "pages/404.html"
 }
